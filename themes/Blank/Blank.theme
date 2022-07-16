@@ -19,3 +19,10 @@ function Blank_preprocess_image_widget(array &$variables) {
     unset($data['preview']);
   }
 }
+
+function blank_preprocess_html(array &$variables) {
+  // Load the site name out of configuration.
+  $config = \Drupal::config('system.site');
+  $variables['site_name'] = $config->get('name');
+  $variables['site_slogan'] = $config->get('slogan');
+}
