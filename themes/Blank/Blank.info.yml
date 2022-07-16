@@ -1,0 +1,24 @@
+name: Blank
+type: theme
+'base theme': stable9
+starterkit: true
+libraries:
+  - Blank/base
+  - Blank/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - Blank/user
+  core/drupal.dropbutton:
+    - Blank/dropbutton
+  core/drupal.dialog:
+    - Blank/dialog
+  file/drupal.file:
+    - Blank/file
+  core/drupal.progress:
+    - Blank/progress
+version: 9.4.2
+project: drupal
+datestamp: 1657157377
+core_version_requirement: ^9
+generator: 'starterkit_theme:9.4.2'
