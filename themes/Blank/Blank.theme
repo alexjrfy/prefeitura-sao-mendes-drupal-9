@@ -25,4 +25,60 @@ function blank_preprocess_html(array &$variables) {
   $config = \Drupal::config('system.site');
   $variables['site_name'] = $config->get('name');
   $variables['site_slogan'] = $config->get('slogan');
+
+  $route = \Drupal\Core\Url::fromRoute('<front>')->toString();
+
+  $variables['current_path']  = $route;
+
+  $tree = \Drupal::menuTree()->load('main', new \Drupal\Core\Menu\MenuTreeParameters());
+  $variables['main_menu'] = loadMenu($tree);
+
+  $variables['theme_path'] = base_path() . $variables['directory'];
+
+}
+
+function blank_preprocess_page__front(array &$variables) {
+    $variables['my_view'] = views_embed_view('banners', 'block_1');
+}
+
+function blank_preprocess_search_result(array &$variables) {
+    //dump('aaaaaaaa');
+    //die();
+}
+
+function blank_preprocess_views_view__teste__page(array &$variables) {
+    //dump('aaaaaaaa');
+    //die();
+}
+
+function blank_preprocess_views_view__banners__block(array &$variables) {
+    //dump('Alex');
+    //die();
+}
+
+
+function loadMenu($tree) {
+  $menu = [];
+  foreach ($tree as $item) {
+    if($item->link->isEnabled()) {
+
+      $current_path = \Drupal::request()->getRequestUri();
+      $url = $item->link->getUrlObject()->toString();
+
+      $active = '';
+      if($current_path ==$url){
+        $active = 'active';
+      }
+
+      $menu[] = [
+        'weight'        => $item->link->getWeight(),
+        'title'         => $item->link->getTitle(),
+        'url'           => $item->link->getUrlObject()->toString(),
+        'has_children'  => $item->hasChildren,
+        'children'      => loadMenu($item->subtree),
+        'active'        => $active,
+      ];
+    }
+  }
+  return $menu;
 }

@@ -1,11 +1,11 @@
-base:
-  version: VERSION
-  css:
-    component:
+#base:
+#  version: VERSION
+#  css:
+#    component:
 #      css/styles/style.css:
 #        weight: -10
-      css/components/hidden.module.css:
-        weight: -10
+#      css/components/hidden.module.css:
+#        weight: -10
 ##dialog:
 #  version: VERSION
 #  css:
