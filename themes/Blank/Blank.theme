@@ -41,21 +41,25 @@ function blank_preprocess_page__front(array &$variables) {
     $variables['my_view'] = views_embed_view('banners', 'block_1');
 }
 
-function blank_preprocess_search_result(array &$variables) {
-    //dump('aaaaaaaa');
-    //die();
-}
+//function blank_preprocess_search_result(array &$variables) {
+//    //dump('aaaaaaaa');
+//    //die();
+//}
+//
+//function blank_preprocess_views_view__teste__page(array &$variables) {
+//    //dump('aaaaaaaa');
+//    //die();
+//}
+//
+//function blank_preprocess_views_view__banners__block(array &$variables) {
+//    //dump('Alex');
+//    //die();
+//}
 
-function blank_preprocess_views_view__teste__page(array &$variables) {
-    //dump('aaaaaaaa');
-    //die();
-}
-
-function blank_preprocess_views_view__banners__block(array &$variables) {
-    //dump('Alex');
-    //die();
-}
-
+//function blank_preprocess_views_view_fields__noticias(array &$variables) {
+//  dump($row);
+//  //die();
+//}
 
 function loadMenu($tree) {
   $menu = [];
