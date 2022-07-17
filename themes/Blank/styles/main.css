@@ -46,6 +46,7 @@ body > .container {
   align-items: center;
   color: #fff;
   position: relative;
+  margin-bottom: 20px;
 }
 @media (max-width: 1000px) {
   .main-banner {
@@ -144,4 +145,20 @@ body > .container {
   z-index: 100;
   right: 0;
   width: 40px;
+}
+
+.noticia-destaque.mini{
+  margin-bottom: 20px;
+}
+.noticia-destaque.mini.last{
+  margin-bottom: 0px;
+}
+.noticia-destaque.grande{
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px){
+  .noticia-destaque.grande{
+    height: initial !important;
+  }
 }

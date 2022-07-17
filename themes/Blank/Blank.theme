@@ -38,7 +38,8 @@ function blank_preprocess_html(array &$variables) {
 }
 
 function blank_preprocess_page__front(array &$variables) {
-    $variables['my_view'] = views_embed_view('banners', 'block_1');
+  $variables['banners'] = views_embed_view('banners', 'block_1');
+  $variables['noticias_destaque'] = views_embed_view('noticias_em_destaque', 'block_1');
 }
 
 //function blank_preprocess_search_result(array &$variables) {
