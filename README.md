@@ -1,3 +1,25 @@
+##Informações
+Drupal na versão 9.4
+Php na versão 8+
+MariaDB/Mysql 10.3+
+
+Aplicação para representar um site de prefeitura
+
+##Plugins instalados
+
+https://www.drupal.org/project/pathauto/releases/8.x-1.10
+https://www.drupal.org/project/token/releases/8.x-1.10
+https://www.drupal.org/project/ctools/releases/4.0.0
+
+##Links que ajudaram no desenvolvimento
+https://www.drupal.org/project/drupal/issues/3050384 -> Criar um novo template
+https://www.drupal.org/node/2598914 -> Remover o cache do Twig
+https://api.drupal.org/api/drupal/core!modules!views!views.theme.inc/group/views_templates/8.2.x -> Exemplo da nomeclatura das views
+https://drupal.stackexchange.com/questions/208201/how-to-get-each-field-value-in-views-views-unformatted-view-machine-name-html-t -> Como acessar os objetos dentro do Twig
+https://stefvanlooveren.me/blog/get-views-row-count-twig-drupal-8 ->como inserir variaveis no template
+
+
+
 <img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
 
 Drupal is an open source content management platform supporting a variety of
