@@ -1,11 +1,12 @@
-##Informações
+## Informações
+
 Drupal na versão 9.4
 Php na versão 8+
 MariaDB/Mysql 10.3+
 
 Aplicação para representar um site de prefeitura
 
-##Plugins instalados
+## Plugins instalados
 
 https://www.drupal.org/project/pathauto/releases/8.x-1.10
 https://www.drupal.org/project/token/releases/8.x-1.10
