@@ -1,13 +1,13 @@
 <?php return array(
     'root' => array(
         'name' => 'drupal/legacy-project',
-        'pretty_version' => '9.4.2',
-        'version' => '9.4.2.0',
-        'reference' => '2442df16afb816693039887e6ca3da112235f8bb',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'c66c1c97b36d5f65b6bc218268f66366a73c42dd',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'dev' => false,
+        'dev' => true,
     ),
     'versions' => array(
         'asm89/stack-cors' => array(
@@ -530,9 +530,9 @@
             ),
         ),
         'drupal/legacy-project' => array(
-            'pretty_version' => '9.4.2',
-            'version' => '9.4.2.0',
-            'reference' => '2442df16afb816693039887e6ca3da112235f8bb',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'c66c1c97b36d5f65b6bc218268f66366a73c42dd',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -847,6 +847,15 @@
             'reference' => 'e98e3e6d4f86621a9b75f623996e6bbdeb4b9318',
             'type' => 'library',
             'install_path' => __DIR__ . '/../guzzlehttp/psr7',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'kint-php/kint' => array(
+            'pretty_version' => '4.1.3',
+            'version' => '4.1.3.0',
+            'reference' => '055630e77a9ae625968ade09addb0bd57ce1f4b3',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../kint-php/kint',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
