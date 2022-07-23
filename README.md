@@ -13,7 +13,8 @@ Esta aplicação é uma solução para sites de prefeitura desenvolvido com o CM
 - Pathauto (Para patterns e urls amigáveis): https://www.drupal.org/project/pathauto/releases/8.x-1.10
     - Token (Dependência necessária): https://www.drupal.org/project/token/releases/8.x-1.10
     - Chaos Tools (Dependência necessária): https://www.drupal.org/project/ctools/releases/4.0.0
-
+- Devel (Ferramentas de desenvolvimento): https://www.drupal.org/project/devel
+  - Kint (Ferramenta de desenvolvimento): https://github.com/kint-php/kint
 
 ## Links que ajudaram no desenvolvimento
 

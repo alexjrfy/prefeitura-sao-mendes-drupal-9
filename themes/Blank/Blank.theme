@@ -26,13 +26,14 @@ function blank_preprocess(array &$variables){
   $variables['site_slogan'] = $config->get('slogan');
 
   $route = \Drupal\Core\Url::fromRoute('<front>')->toString();
-
   $variables['current_path']  = $route;
+  $variables['theme_path'] = base_path() . $variables['directory'];
+  $variables['base_url'] =  \Drupal::request()->getSchemeAndHttpHost().\Drupal::request()->getBaseUrl();
+  $variables['current_url']  =  \Drupal::request()->getSchemeAndHttpHost().\Drupal\Core\Url::fromRoute('<current>')->toString();
+
 
   $tree = \Drupal::menuTree()->load('main', new \Drupal\Core\Menu\MenuTreeParameters());
   $variables['main_menu'] = loadMenu($tree);
-  $variables['theme_path'] = base_path() . $variables['directory'];
-  $variables['base_url'] =  \Drupal::request()->getSchemeAndHttpHost().\Drupal::request()->getBaseUrl();
 
 }
 

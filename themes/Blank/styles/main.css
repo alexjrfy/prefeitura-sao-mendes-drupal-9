@@ -7,6 +7,10 @@ a:hover{
   color: initial;
 }
 
+.theme-blue-color{
+  color: #28bdd6;
+}
+
 .theme-blue-link{
   color: #28bdd6;
 }
@@ -223,3 +227,9 @@ body > .container {
 
 }
 
+.noticia-interna .noticia-rodape{
+  margin-bottom: 50px;
+}
+.noticia-interna .noticia-rodape .noticias-icones-compartilhar{
+  font-size: 30px;
+}
