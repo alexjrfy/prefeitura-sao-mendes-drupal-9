@@ -20,8 +20,7 @@ function Blank_preprocess_image_widget(array &$variables) {
   }
 }
 
-function blank_preprocess_html(array &$variables) {
-  // Load the site name out of configuration.
+function blank_preprocess(array &$variables){
   $config = \Drupal::config('system.site');
   $variables['site_name'] = $config->get('name');
   $variables['site_slogan'] = $config->get('slogan');
@@ -32,8 +31,14 @@ function blank_preprocess_html(array &$variables) {
 
   $tree = \Drupal::menuTree()->load('main', new \Drupal\Core\Menu\MenuTreeParameters());
   $variables['main_menu'] = loadMenu($tree);
-
   $variables['theme_path'] = base_path() . $variables['directory'];
+  $variables['base_url'] =  \Drupal::request()->getSchemeAndHttpHost().\Drupal::request()->getBaseUrl();
+
+}
+
+function blank_preprocess_html(array &$variables) {
+  // Load the site name out of configuration.
+
 
 }
 

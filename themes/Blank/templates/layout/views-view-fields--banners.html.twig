@@ -4,7 +4,7 @@
 {% set novaGuia = fields.field_nova_guia.content|striptags|trim %}
 
 
-<div class="main-banner" style='background: url("{{ background_image }}")'>
+<div class="main-banner" style='background: url("{{ background_image }}"); background-repeat: no-repeat; background-position: center;'>
   <div class="center info-position-banner">
     <p class="category-banner">{{ fields.title.content }}</p>
     <p class="title-banner">{{ fields.field_descricao.content }}</p>
